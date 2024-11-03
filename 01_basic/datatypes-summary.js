@@ -32,4 +32,23 @@ let userDetail = {
     email : "badshah@gmail.com"
 };
 
-console.table([typeof(userName), typeof(age),typeof(marks), typeof(transactionValue), typeof(greet), typeof(userDetail), typeof(superHeroes),typeof(Symbol1)])
+// console.table([typeof(userName), typeof(age),typeof(marks), typeof(transactionValue), typeof(greet), typeof(userDetail), typeof(superHeroes),typeof(Symbol1)])
+
+// ************************************Memory****************************
+
+// Stack(Primitive) Heap(Non-Primitive)
+
+let username1 = "Akshat";
+let userName2 = username1;
+
+username1 = "Shubham";
+console.log(`username1 : ${username1}, userName2 ${userName2}`);
+
+let userobj1 = { name: "Akshat"};
+let userobj2 = userobj1;
+
+userobj1.name = "Shubham";
+
+console.log(userobj1.name, userobj2.name);
+
+
